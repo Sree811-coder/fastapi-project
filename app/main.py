@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.db import create_db_and_tables
+from app.controllers import auth_routes
 
 app = FastAPI()
 
@@ -7,6 +8,8 @@ app = FastAPI()
 def on_startup():
     create_db_and_tables()
 
-@app.get('/')
+app.include_router(auth_routes.router)
+
+@app.get("/")
 def read_root():
     return {"msg": "FastAPI + SQLModel + JWT RBAC is working!"}
