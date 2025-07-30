@@ -30,24 +30,24 @@ A secure RESTful API built with **FastAPI**, **SQLModel**, and **PostgreSQL**, i
 ## Installation Steps
 
 1. **Clone the repository**
-   git clone https://github.com/<your-username>/fastapi-jwt-rbac.git
-   cd fastapi-jwt-rbac
+   - git clone https://github.com/<your-username>/fastapi-jwt-rbac.git
+   - cd fastapi-jwt-rbac
 
 2. **Create and activate virtual environment**
-    python -m venv venv
-    venv\Scripts\activate  # On Windows
+    - python -m venv venv
+    - venv\Scripts\activate  # On Windows
 
 3. **Install Dependencies**
-    pip install -r requirements.txt
+    - pip install -r requirements.txt
 
 4. **Set up environment variables**
 
     Create a .env file in the root directory and add:
-    DATABASE_URL=postgresql://postgres:<your_password>@localhost:5432/<your_database>
-    SECRET_KEY=your_secret_key
-    ALGORITHM=HS256
-    ACCESS_TOKEN_EXPIRE_MINUTES=30
+    - DATABASE_URL=postgresql://postgres:<your_password>@localhost:5432/<your_database>
+    - SECRET_KEY=your_secret_key
+    - ALGORITHM=HS256
+    - ACCESS_TOKEN_EXPIRE_MINUTES=30
 
 5. **Run the Server**
-    uvicorn app.main:app --reload
+    - uvicorn app.main:app --reload
 
