@@ -6,7 +6,6 @@ class UserCreate(BaseModel):
     username: str
     password: str
     role: Optional[str] = "user"
-    project_id: Optional[int] = None
 
 
 class UserRead(BaseModel):

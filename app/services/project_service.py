@@ -9,7 +9,6 @@ def create_project(data: ProjectCreate, db: Session) -> Project:
     db.add(new_project)
     db.commit()
     db.refresh(new_project)
-    print(new_project)
     return new_project
 
 
