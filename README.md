@@ -51,3 +51,14 @@ A secure RESTful API built with **FastAPI**, **SQLModel**, and **PostgreSQL**, i
 5. **Run the Server**
     - uvicorn app.main:app --reload
 
+
+## 📬 Postman Collection
+
+You can test all APIs using the official Postman collection:
+
+👉 [Download Collection](postman-collection/fastapi.postman_collection.json)
+
+1. Open Postman
+2. Click **Import**
+3. Choose the downloaded `.json` file
+4. Run requests directly with saved headers, bodies, and tokens
